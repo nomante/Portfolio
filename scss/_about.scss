@@ -1,0 +1,98 @@
+.about {
+    background: 
+    lighten($accent-color,70%)
+    linear-gradient(
+                to right,
+                rgba($accent-color, 0.3),
+                rgba($accent-color, 0.9)
+            ),;
+    padding-bottom: 2rem;
+
+    &__bio-image {
+        height: 40vh;
+        width: 100%;
+        background: 
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.4)
+            ),
+            url(/dist/img/pexels-ann-poan-5797991.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        h2{
+            margin-bottom: 1rem;
+            font-family: 'Permanent Marker', cursive;
+            color:$flair-color;
+            font-weight: 700;
+        }
+        
+        p {
+            margin-bottom: 0.5rem;
+            font-size: 15px;
+            font-family: 'Macondo', cursive;
+        }
+    }
+
+    &__bio {
+        width: 80%;
+        text-align: center;
+
+        .text-seconary {
+            padding-bottom: 1rem; 
+        }
+    }
+
+    .jobs {
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        
+        
+
+        &__job {
+            background: lighten($accent-color,50%) ;
+            padding: 0.5rem;
+            border-bottom: 5px solid $flair-color;
+            border-radius: 20px;
+
+            h2, h3 {
+                margin: 0.5rem 0;
+                color: lighten($accent-color, 10%);
+                font-weight: 700;
+                text-align: center;
+                font-family: 'Macondo', cursive;
+            }
+            h6 {
+                border-left: 50px solid lighten($accent-color, 10%) ;
+                border-right: 50px solid lighten($accent-color, 10%) ;
+                border-radius: 50%;
+                margin: 0.3rem 0;
+                color: $white-color;
+                text-align: center;
+                font-family: 'Macondo', cursive;
+            }
+            p {
+                color: $white-color;
+                font-family: 'Macondo', cursive;
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+}

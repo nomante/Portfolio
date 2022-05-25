@@ -1,0 +1,40 @@
+.contact{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.9)
+        ),
+        url(/dist/img/pexels-pixabay-326576.jpg) center bottom;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: $flair-color;
+        font-family: 'Permanent Marker', cursive;
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+        font-size: 1.5rem;
+        color: lighten($flair-color,30%);
+        font-family: 'Macondo', cursive;
+    }
+
+    .social-icons {
+        position: initial;
+        margin-top: 2rem;
+    }
+}

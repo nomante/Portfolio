@@ -1,0 +1,36 @@
+.home {
+    font-family: 'Macondo', cursive;
+    font-size: 1.5rem;
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.6),
+            rgba($primary-color, 0.9)
+        ),
+        url(/dist/img/pexels-ann-poan-5797908.jpg) center bottom;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__name {
+        font-family: 'Macondo', cursive;
+        font-size: 5rem;
+        font-weight: 700;
+        color: $white-color;
+        padding: 1rem 0 1rem 0;
+        margin-bottom: 1rem;
+        border-bottom: 4px solid $flair-color;
+        border-radius: 30px;
+
+        &--last {
+            font-family: 'Permanent Marker', cursive;
+            color: $flair-color;
+            font-weight: 700;
+        }
+    }
+}
