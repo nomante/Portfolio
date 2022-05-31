@@ -483,6 +483,7 @@
     height: 100%;
     background: transparent;
     text-align: right;
+    bottom: 100rem;
   }
   .nav .menu-nav__item {
     display: inline;
